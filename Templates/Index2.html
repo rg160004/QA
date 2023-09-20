@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QA bot</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet">
+    <link rel="stylesheet" href="static/dist/css/style.css">
+    <link rel="stylesheet" href="static/style2.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Ava</title>
+                                    <defs>
+                                        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="logo-gradient-b">
+                                            <stop stop-color="#39D8C8" offset="0%"/>
+                                            <stop stop-color="#BCE4F4" offset="47.211%"/>
+                                            <stop stop-color="#838DEA" offset="100%"/>
+                                        </linearGradient>
+                                        <path d="M32 16H16v16H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h28a2 2 0 0 1 2 2v14z" id="logo-gradient-a"/>
+                                        <linearGradient x1="23.065%" y1="25.446%" y2="100%" id="logo-gradient-c">
+                                            <stop stop-color="#1274ED" stop-opacity="0" offset="0%"/>
+                                            <stop stop-color="#1274ED" offset="100%"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="logo-gradient-d" fill="#fff">
+                                            <use xlink:href="#logo-gradient-a"/>
+                                        </mask>
+                                        <use fill="url(#logo-gradient-b)" xlink:href="#logo-gradient-a"/>
+                                        <path fill="url(#logo-gradient-c)" mask="url(#logo-gradient-d)" d="M-16-16h32v32h-32z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero text-center">
+                <div class="container-sm">
+                    <div class="hero-inner">
+                        <div class="hero-browser">
+                            <div class="bubble-3 is-revealing">
+                                <svg width="427" height="286" viewBox="0 0 427 286" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org>
+                                    <defs>
+                                        <path d="M213.5 286C331.413 286 427 190.413 427 72.5S304.221 16.45 186.309 16.45C68.396 16.45 0-45.414 0 72.5>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="bubble-3-b" fill="#fff">
+                                            <use xlink:href="#bubble-3-a"/>
+                                        </mask>
+                                        <use fill="#4E8FF8" xlink:href="#bubble-3-a"/>
+                                        <path d="M64.5 129.77c117.913 0 213.5-95.588 213.5-213.5 0-117.914-122.779-56.052-240.691-56.052C-80.604-139.>
+                                        <path d="M381.5 501.77c117.913 0 213.5-95.588 213.5-213.5 0-117.914-122.779-56.052-240.691-56.052C236.396 232>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="bubble-4 is-revealing">
+                                <svg width="230" height="235" viewBox="0 0 230 235" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org>
+                                    <defs>
+                                        <path d="M196.605 234.11C256.252 234.11 216 167.646 216 108 216 48.353 167.647 0 108 0S0 48.353 0 108s136.959>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="bubble-4-b" fill="#fff">
+                                            <use xlink:href="#bubble-4-a"/>
+                                        </mask>
+                                        <use fill="#7CE8DD" xlink:href="#bubble-4-a"/>
+                                        <circle fill="#3BDDCC" mask="url(#bubble-4-b)" cx="30" cy="108" r="108"/>
+                                        <circle fill="#B1F1EA" opacity=".7" mask="url(#bubble-4-b)" cx="265" cy="88" r="108"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="hero-browser-inner is-revealing">
+
+                                <h1 class="hero-title h2-mobile mt-0 is-revealing">QA Bot PoC</h1>
+                        <p class="hero-paragraph is-revealing">Ask Our Bot qustions while divided into parts.</p>
+                        <div class="hero-form newsletter-form field field-grouped is-revealing">
+                            <form id="upload-form" >
+                                <div class="form-floating">
+                                    <label for="question">Comments:<br/></label>
+                                    <textarea class="form-control TAR" placeholder="Leave a comment here" id="question" style="height: 100px"></texta>
+                                  </div>
+                                <div class="form-floating">
+                                    <label for="phrasing">Question:<br/></label>
+                                    <textarea class="form-control TAR" placeholder="Leave a comment here" id="phrasing" style="height: 100px"></texta>
+                                </div>
+                                <div class="form-floating">
+                                    <label for="extra">Extra:<br/></label>
+                                    <textarea class="form-control TAR" placeholder="Leave a comment here" id="extra" style="height: 100px"></textarea>
+                                </div>
+
+                                <h1>Record Audio and Upload</h1>
+
+                                <!-- <audio id="recorded-audio" controls></audio> -->
+
+                                <label for="images" class="drop-container" id="dropcontainer">
+                                    <span class="drop-title">Upload Audio here</span>
+                                    or
+                                    <input type="file" name="audio" id="audioFileInput" accept="audio/*" >
+                                  </label>
+
+                                  <button  id="upload-btn" disabled>Upload Audio</button>
+
+                                  <pre>
+                                      <div id="GPTResponse" style="width:600px">
+                                          {{data}}
+                                      </div>
+                                  </pre>
+  
+                                  <!-- <button type="submit">Submit</button> -->
+                              </form>
+                          </div>
+                              </div>
+                              <div class="bubble-1 is-revealing">
+                                  <svg width="61" height="52" viewBox="0 0 61 52" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/199>
+                                      <defs>
+                                          <path d="M32 43.992c17.673 0 28.05 17.673 28.05 0S49.674 0 32 0C14.327 0 0 14.327 0 32c0 17.673 14.327 11.992>
+                                      </defs>
+                                      <g fill="none" fill-rule="evenodd">
+                                          <mask id="bubble-1-b" fill="#fff">
+                                              <use xlink:href="#bubble-1-a"/>
+                                          </mask>
+                                          <use fill="#FF6D8B" xlink:href="#bubble-1-a"/>
+                                          <path d="M2 43.992c17.673 0 28.05 17.673 28.05 0S19.674 0 2 0c-17.673 0-32 14.327-32 32 0 17.673 14.327 11.99>
+                                            <path d="M74 30.992c17.673 0 28.05 17.673 28.05 0S91.674-13 74-13C56.327-13 42 1.327 42 19c0 17.673 14.327 11>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="bubble-2 is-revealing">
+                                    <svg width="179" height="126" viewBox="0 0 179 126" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org>
+                                        <defs>
+                                            <path d="M104.697 125.661c41.034 0 74.298-33.264 74.298-74.298s-43.231-7.425-84.265-7.425S0-28.44 0 12.593c0 >
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <mask id="bubble-2-b" fill="#fff">
+                                                <use xlink:href="#bubble-2-a"/>
+                                            </mask>
+                                            <use fill="#838DEA" xlink:href="#bubble-2-a"/>
+                                            <path d="M202.697 211.661c41.034 0 74.298-33.264 74.298-74.298s-43.231-7.425-84.265-7.425S98 57.56 98 98.593c>
+                                            <path d="M43.697 56.661c41.034 0 74.298-33.264 74.298-74.298s-43.231-7.425-84.265-7.425S-61-97.44-61-56.407C->
+                                        </g>
+                                    </svg>
+    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+    
+    
+            </main>
+    
+        </div>
+    
+        <script src="static/dist/js/main.min.js"></script>
+        <script>
+            let recorder;
+            const recordBtn = document.getElementById('record-btn');
+            const stopBtn = document.getElementById('stop-btn');
+            const recordedAudio = document.getElementById('recorded-audio');
+            const audioInput = document.getElementById('audioFileInput');
+            const uploadBtn = document.getElementById('upload-btn');
+            const GPTResponse = document.getElementById('GPTResponse');
+    
+            document.getElementById('audioFileInput').addEventListener('change', function(e) {
+                uploadBtn.disabled = false;
+
+            });
+
+// recordBtn.addEventListener('click', startRecording);
+// stopBtn.addEventListener('click', stopRecording);
+uploadBtn.addEventListener('click', uploadAudio);
+var rec;
+var chunks = [];
+function startRecording() {
+    navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(function(stream) {
+            recorder = new MediaRecorder(stream);
+
+            recorder.addEventListener('dataavailable', function(e) {
+                chunks.push(e.data);
+            });
+
+            recorder.addEventListener('stop', function() {
+                const blob = new Blob(chunks, { type: 'audio/webm' });
+                const url = URL.createObjectURL(blob);
+                recordedAudio.src = url;
+                        // audioInput.files = [new File([blob], 'recorded_audio.mp3')];
+                        rec=new Blob(chunks, { type: 'audio/webm' });
+                        uploadBtn.disabled = false;
+                    });
+
+                    recorder.start();
+
+                    recordBtn.disabled = true;
+                    stopBtn.disabled = false;
+                })
+                .catch(function(err) {
+                    console.error('Error accessing microphone', err);
+                });
+        }
+
+        function stopRecording() {
+            if (recorder && recorder.state !== 'inactive') {
+                recorder.stop();
+            }
+
+            recordBtn.disabled = false;
+            stopBtn.disabled = true;
+
+        }
+        async function uploadAudio(e) {
+            e.preventDefault();
+            const fileType = 'audio/mpeg';
+            const audioData = chunks;
+            // const blob = new Blob([audioData], { type: fileType });
+            console.log(rec)
+            const blob = rec
+            const formData = new FormData();
+            GPTResponse.innerHTML= document.querySelector('#question')?.value+" "+ document.querySelector('#phrasing')?.value+" "+  document.querySel>
+
+            const fileInput = document.getElementById('audioFileInput');
+            const file = fileInput.files[0]; // Get the selected file
+            console.log(file)
+            if (file){
+                formData.append('audio', file);
+            }
+            formData.append('prompt', document.querySelector('#question')?.value);
+            formData.append('question', document.querySelector('#phrasing')?.value);
+            formData.append('answer', document.querySelector('#extra')?.value);
+
+            await fetch('http://15.206.84.43:5001/upload', {
+                method: 'POST',
+
+                body: formData
+            })
+            .then(response => 
+                response.json()
+            )
+            .then(result => {
+                console.log('Success:', result);
+                GPTResponse.innerHTML = result.data;
+                console.log(result)
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                GPTResponse.innerHTML ="Error Occured, Reload Page";
+            });
+        }
+    </script>
+</body>
+</html>
